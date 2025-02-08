@@ -1,9 +1,11 @@
 # Quiz Generator Application - Project Report
 
 ## 1. Project Overview
+
 The **Quiz Generator Application** is a web-based application developed using **Java, Servlets, JSP, Hibernate with JPA**, and **MySQL**. The primary goal of this application is to allow students to take quizzes, fetch random questions from the database, calculate scores, and display results dynamically.
 
 ## 2. Technologies Used
+
 - **Backend:** Java, Servlets, JSP, Hibernate (JPA)
 - **Frontend:** HTML, CSS, JSP
 - **Database:** MySQL
@@ -12,25 +14,30 @@ The **Quiz Generator Application** is a web-based application developed using **
 - **Version Control:** GitHub
 
 ## 3. Project Structure
+
 The project follows a structured folder hierarchy. Below is the breakdown:
 
 ### **Main Project Directory**
+
 ```
 TECHPLEMENT/
 │-- src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   ├── com.techplement.controller/
-│   │   │   ├── com.techplement.dao/
-│   │   │   ├── com.techplement.dto/
+│   │   │   ├── com.techplement.controller/    # Contains servlets for handling requests
+│   │   │   ├── com.techplement.dao/           # DAO classes for database operations
+│   │   │   ├── com.techplement.dto/           # DTO classes for data transfer
 │   │   ├── resources/
-│   │   │   ├── hibernate.cfg.xml
+│   │   │   ├── hibernate.cfg.xml              # Hibernate configuration file
 │   │   ├── webapp/
 │   │   │   ├── WEB-INF/
-│   │   │   │   ├── web.xml
+│   │   │   │   ├── web.xml                     # Deployment descriptor
 │   │   │   ├── pages/
-│   │   │   ├── assets/
-│   │   ├── pom.xml
+│   │   │   │   ├── login.jsp                   # Login page
+│   │   │   │   ├── quiz.jsp                    # Quiz page
+│   │   │   │   ├── result.jsp                  # Result display page
+│   │   │   ├── assets/                         # CSS, JavaScript, and images
+│   │   ├── pom.xml                            # Maven configuration file
 │-- target/
 │-- .gitignore
 │-- README.md
@@ -42,7 +49,10 @@ TECHPLEMENT/
 This folder contains the frontend and configuration files for the application.
 
 - **WEB-INF/web.xml**: Deployment descriptor for the servlet application.
-- **pages/**: Contains JSP files for UI components like quiz, results, and authentication.
+- **pages/**:
+  - **login.jsp**: The entry point of the application where users log in.
+  - **quiz.jsp**: Displays the quiz questions fetched from the database.
+  - **result.jsp**: Shows the final score after the quiz completion.
 - **assets/**: Stores static resources like CSS, JavaScript, and images.
 
 ### **4.2 DTO Package (`src/main/java/com/techplement/dto/`)
@@ -67,6 +77,7 @@ Controllers manage the request-response cycle and business logic.
 The `hibernate.cfg.xml` file contains Hibernate configuration settings, including database connection details, dialect, and mapping resources.
 
 #### **How Hibernate Works Step by Step:**
+
 1. **Configuration Load:** Hibernate loads `hibernate.cfg.xml` to initialize the configuration settings.
 2. **SessionFactory Creation:** Based on the configuration, Hibernate creates a `SessionFactory` object, which acts as a factory for database sessions.
 3. **Session Management:** Using the `SessionFactory`, a Hibernate `Session` is opened to interact with the database.
@@ -83,17 +94,22 @@ The **pom.xml** file is used for Maven dependencies and build configurations. It
 - Build plugins for deployment
 
 ## 5. Installation & Setup
+
 ### **Step 1: Clone the Repository**
+
 ```
 git clone https://github.com/Shiva-6816/TECHPLEMENT.git
 cd TECHPLEMENT
 ```
+
 ### **Step 2: Import into Eclipse**
+
 1. Open **Eclipse**
 2. Go to **File → Import → Existing Maven Projects**
 3. Select the **TECHPLEMENT** directory and click **Finish**
 
 ### **Step 3: Configure Database**
+
 1. Open **MySQL Workbench**
 2. Create a database:
    ```sql
@@ -102,13 +118,17 @@ cd TECHPLEMENT
 3. Update **hibernate.cfg.xml** with database credentials.
 
 ### **Step 4: Run the Project**
+
 1. Right-click on the project in Eclipse.
 2. Select **Run As → Run on Server**
-3. Open browser and go to `http://localhost:8080/TECHPLEMENT/pages/quiz.jsp`
+3. Open browser and go to `http://localhost:8080/TECHPLEMENT/pages/login.jsp`
+4. **Login with valid credentials to start the quiz.**
 
 ## 6. Conclusion
+
 This project successfully integrates Servlets, JSP, and Hibernate to build a functional quiz system. Future improvements can include an **admin panel**, **timer-based quizzes**, and **user analytics**.
 
 ---
+
 **Maintainer:** [Shiva-6816](https://github.com/Shiva-6816/)
 
