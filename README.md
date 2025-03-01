@@ -103,11 +103,13 @@ The pom.xml file is used for Maven dependencies and build configurations. It inc
 
 
 ### Question Display Page
-![Screenshot 2025-03-01 125329](https://github.com/user-attachments/assets/3208ad65-05f2-40f6-8cc9-54b343a43de4)
+![Screenshot 2025-03-01 131724](https://github.com/user-attachments/assets/91081736-e79e-442a-b92f-6a09d6dff398)
+
 
 
 ### Result Page
-![Screenshot 2025-03-01 125415](https://github.com/user-attachments/assets/2e51ba77-ef29-4193-b2f4-3df50372e2a6)
+![Screenshot 2025-03-01 131602](https://github.com/user-attachments/assets/04efd0b8-1860-4ffa-9e8e-06682c3065f5)
+
 
 
 ### Credentials Page
