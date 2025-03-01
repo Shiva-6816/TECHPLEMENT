@@ -101,7 +101,7 @@
     if (score == null) {
         score = 0; // Default to 0 if no score is found
     }
-    int totalQuestions = 8; // Total number of questions
+    int totalQuestions = 10; // Total number of questions
 %>
 
 <div class="result-container">
