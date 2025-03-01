@@ -111,12 +111,9 @@ The pom.xml file is used for Maven dependencies and build configurations. It inc
 
 
 ### Credentials Page
-![Sucessfull signup](![Screenshot 2025-03-01 125709](https://github.com/user-attachments/assets/b8f22d86-b80d-49fb-a5b4-f82da6aa6e2b)
-)
-![Invalid password](![Screenshot 2025-03-01 125613](https://github.com/user-attachments/assets/8930690b-5dd9-4ec5-892b-400634962c7f)
+Sucessfull signup(![Screenshot 2025-03-01 125709](https://github.com/user-attachments/assets/b8f22d86-b80d-49fb-a5b4-f82da6aa6e2b)
+Invalid password(![Screenshot 2025-03-01 125613](https://github.com/user-attachments/assets/8930690b-5dd9-4ec5-892b-400634962c7f)
 
-
-)
 
 ## 6. Installation & Setup
 
