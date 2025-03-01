@@ -24,7 +24,7 @@ public class Instruction extends HttpServlet {
         QuestionDao questionDao = new QuestionDao();
 
         // Fetch a list of 8 random questions from the database
-        List<Question> listOfQuestions = questionDao.fetchAllQuestions(8);
+        List<Question> listOfQuestions = questionDao.fetchAllQuestions(10);
 
         /*
          * We use session attributes instead of request attributes because:
